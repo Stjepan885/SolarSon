@@ -1,0 +1,95 @@
+.button
+{
+    -fx-background-color : #05071F;
+    -fx-text-fill : #e7e5e5;
+}
+.button:hover{
+    -fx-background-color : #10165F;
+}
+.button:pressed
+{
+    -fx-background-color : #1620A1;
+}
+
+.scroll-pane {
+    -fx-background-color: #02030A;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #10165F;
+    -fx-background-radius: 5em;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: black;
+}
+
+.toggle-button {
+    -fx-background-color : #05071F;
+}
+
+
+.toggle-button:selected {
+    -fx-background-color : #05071F;
+    -fx-text-fill : #e7e5e5;
+}
+
+.toggle-button:hover {
+    -fx-background-color : #10165F;
+}
+
+.toggle-button:pressed {
+    -fx-background-color : #1620A1;
+}
+
+.choice-box .context-menu {
+    -fx-background-color: rgba(246, 246, 246, 0.34); /* Set the background color of the dropdown menu */
+    -fx-text-fill: #FFFFFF;
+}
+
+.choice-box .menu-item {
+    -fx-background-color: transparent; /* Set the background color of each item in the dropdown menu */
+    -fx-text-fill: #ffffff; /* Set the text color of each item */
+}
+
+.choice-box .text {
+    -fx-text-fill: white;
+}
+
+
+.choice-box .menu-item:hover {
+    -fx-background-color: rgba(20, 36, 71, 0.63); /* Set the background color of each item on hover */
+    -fx-text-fill: #FFFFFF;
+}
+
+.choice-box .arrow-button {
+    -fx-background-color: transparent; /* Set the background color of the button */
+    -fx-background-radius: 5; /* Optional: Set the background radius */
+    -fx-background-insets: 0; /* Optional: Set the background insets */
+    -fx-padding: 0;
+}
+
+.scroll-pane {
+    -fx-background: #02030A;
+}
+
+.scroll-pane .viewport {
+    -fx-background: #02030A;
+}

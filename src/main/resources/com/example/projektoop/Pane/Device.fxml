@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox fx:id="itemD" alignment="CENTER" maxHeight="-Infinity" maxWidth="172.0" minHeight="-Infinity" minWidth="172.0" prefHeight="53.0" prefWidth="172.0" spacing="80.0" style="-fx-background-color: #02030A; -fx-background-radius: 5; -fx-background-insets: 0;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projektoop.controllers.DeviceController">
+    <children>
+        <HBox alignment="CENTER" maxWidth="172.0" minWidth="172.0" prefHeight="53.0" prefWidth="172.0">
+        <Label fx:id="labelActive" alignment="CENTER" maxWidth="161.0" minWidth="81.0" prefHeight="53.0" prefWidth="161.0" text="Device" textFill="#2a73ff">
+            <font>
+               <Font name="System Bold Italic" size="16.0" />
+            </font></Label>
+         <HBox.margin>
+            <Insets right="10.0" />
+         </HBox.margin>
+        </HBox>
+    </children>
+    <effect>
+        <DropShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+    </effect>
+</HBox>

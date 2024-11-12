@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="630.0" prefWidth="942.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projektoop.controllers.pane.SettingsPaneControllers">
+
+    <children>
+        <HBox alignment="CENTER_LEFT" layoutX="45.0" layoutY="26.0" prefHeight="580.0" prefWidth="879.0" spacing="10.0">
+            <children>
+                <VBox alignment="TOP_CENTER" prefHeight="580.0" prefWidth="300.0">
+                    <children>
+                        <Label contentDisplay="CENTER" text="Rates" textFill="#65f518">
+                            <font>
+                                <Font size="30.0" />
+                            </font>
+                        </Label>
+                  <HBox alignment="CENTER" prefHeight="28.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="TOP" prefHeight="30.0" prefWidth="265.0" text="Device scan interval" textFill="WHITE" />
+                        <ChoiceBox fx:id="scan_interval" maxHeight="30.0" minHeight="33.0" prefWidth="69.0" style="-fx-background-color: #02030A; -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-border-color: rgba(255,255,255,0.43); -fx-border-radius: 18;" stylesheets="@style.css" value="10">
+                            <items>
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:value="3" />
+                                    <String fx:value="5" />
+                                    <String fx:value="10" />
+                                    <String fx:value="15" />
+                                </FXCollections>
+                            </items>
+                        </ChoiceBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="46.0" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="TOP" prefHeight="30.0" prefWidth="273.0" text="Save interval day (seconds)" textFill="WHITE" />
+                        <ChoiceBox fx:id="save_interval" maxHeight="30.0" minHeight="33.0" prefWidth="69.0" style="-fx-background-color: #02030A; -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: #FFFFFF;  -fx-font-weight: bold; -fx-border-color: rgba(255,255,255,0.43); -fx-border-radius: 18;" stylesheets="@style.css" value="10">
+                           <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                 <String fx:value="3" />
+                                 <String fx:value="5" />
+                                 <String fx:value="10" />
+                                 <String fx:value="15" />
+                                  <String fx:value="30" />
+                              </FXCollections>
+                           </items>
+                        </ChoiceBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="76.0" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="TOP" prefHeight="30.0" prefWidth="298.0" text="Save interval night (seconds)" textFill="WHITE" />
+                        <ChoiceBox fx:id="save_night_interval" maxHeight="30.0" minHeight="33.0" prefWidth="69.0" style="-fx-background-color: #02030A; -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-border-color: rgba(255,255,255,0.43); -fx-border-radius: 18;" stylesheets="@style.css" value="10">
+                           <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                 <String fx:value="15" />
+                                 <String fx:value="30" />
+                                 <String fx:value="60" />
+                                 <String fx:value="120" />
+                              </FXCollections>
+                           </items>
+                        </ChoiceBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="106.0" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="TOP" prefHeight="30.0" prefWidth="295.0" text="Chart update interval" textFill="WHITE" />
+                        <ChoiceBox fx:id="chart_update_interval" maxHeight="30.0" minHeight="33.0" prefWidth="69.0" style="-fx-background-color: #02030A; -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-border-color: rgba(255,255,255,0.43); -fx-border-radius: 18;" stylesheets="@style.css" value="10">
+                           <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                 <String fx:value="5" />
+                                 <String fx:value="15" />
+                                 <String fx:value="30" />
+                                 <String fx:value="60" />
+                              </FXCollections>
+                           </items>
+                        </ChoiceBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="136.0" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="TOP" prefHeight="30.0" prefWidth="284.0" text="Chart reset interval (hours)" textFill="WHITE" />
+                        <ChoiceBox fx:id="chart_reset_interval" maxHeight="30.0" minHeight="33.0" prefWidth="69.0" style="-fx-background-color: #02030A; -fx-background-radius: 5; -fx-background-insets: 0; -fx-border-color: rgba(255,255,255,0.43); -fx-border-radius: 18;" stylesheets="@style.css" value="10">
+                           <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                 <String fx:value="1" />
+                                 <String fx:value="3" />
+                                 <String fx:value="6" />
+                                 <String fx:value="12" />
+                                  <String fx:value="24" />
+                              </FXCollections>
+                           </items>
+                        </ChoiceBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+
+                    </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+                </VBox>
+                <VBox alignment="TOP_CENTER" prefHeight="580.0" prefWidth="300.0" spacing="20.0">
+               <children>
+                   <Label contentDisplay="CENTER" text="Smart Devices" textFill="#65f518">
+                       <font>
+                           <Font size="30.0" />
+                       </font>
+                   </Label>
+                  <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="TOP" prefHeight="30.0" prefWidth="284.0" text="Max discharge current A" textFill="WHITE" />
+                        <TextField fx:id="max_current" alignment="CENTER" prefHeight="25.0" prefWidth="81.0" promptText="10" style="-fx-background-color: #02030A; -fx-border-radius: 18; -fx-border-color: rgba(255,255,255,0.43); -fx-text-fill: white; -fx-font-weight: bold" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="55.0" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="TOP" prefHeight="30.0" prefWidth="284.0" text="Max output power W" textFill="WHITE" />
+                        <TextField fx:id="max_power" alignment="CENTER" prefHeight="27.0" prefWidth="84.0" promptText="3000" style="-fx-background-color: #02030A; -fx-border-radius: 18; -fx-border-color: rgba(255,255,255,0.43); -fx-text-fill: white; -fx-font-weight: bold" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="85.0" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="TOP" prefHeight="30.0" prefWidth="284.0" text="Charging difference W" textFill="WHITE" />
+                        <TextField fx:id="charging_difference" alignment="CENTER" prefHeight="27.0" prefWidth="84.0" promptText="100" style="-fx-background-color: #02030A; -fx-border-radius: 18; -fx-border-color: rgba(255,255,255,0.43); -fx-text-fill: white; -fx-font-weight: bold" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="85.0" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="TOP" prefHeight="30.0" prefWidth="284.0" text="Turn on time h" textFill="WHITE" />
+                        <TextField fx:id="on_time" alignment="CENTER" prefHeight="25.0" prefWidth="81.0" promptText="7" style="-fx-background-color: #02030A; -fx-border-radius: 18; -fx-border-color: rgba(255,255,255,0.43); -fx-text-fill: white; -fx-font-weight: bold" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="115.0" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="TOP" prefHeight="30.0" prefWidth="284.0" text="Turn of time h" textFill="WHITE" />
+                        <TextField fx:id="off_time" alignment="CENTER" prefHeight="25.0" prefWidth="81.0" promptText="10" style="-fx-background-color: #02030A; -fx-border-radius: 18; -fx-border-color: rgba(255,255,255,0.43); -fx-text-fill: white; -fx-font-weight: bold" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="save_button" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #2a73ff; -fx-border-radius: 18; -fx-border-color: white; -fx-background-radius: 18;" text="Save" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="200.0" />
+                     </VBox.margin>
+                  </Button>
+               </children></VBox>
+                <VBox alignment="TOP_CENTER" prefHeight="580.0" prefWidth="261.0" spacing="10">
+                    <children>
+                        <Label contentDisplay="CENTER" text="Account" textFill="#65f518">
+                            <font>
+                                <Font size="30.0" />
+                            </font>
+                        </Label>
+                  <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="TOP" prefHeight="30.0" prefWidth="284.0" text="Ewelink" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="55.0" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="TOP" prefHeight="30.0" prefWidth="284.0" text="Email" textFill="WHITE" />
+                        <TextField fx:id="email" alignment="CENTER" prefHeight="27.0" prefWidth="346.0" promptText="email" style="-fx-background-color: #02030A; -fx-border-radius: 18; -fx-border-color: rgba(255,255,255,0.43); -fx-text-fill: white; -fx-font-weight: bold; -fx-prompt-text-fill: rgba(255, 255, 255, 0.5);" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="85.0" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="TOP" prefHeight="30.0" prefWidth="284.0" text="Password" textFill="WHITE" />
+                         <PasswordField fx:id="password" alignment="CENTER" prefHeight="27.0" prefWidth="347.0" promptText="password" style="-fx-background-color: #02030A; -fx-border-radius: 18; -fx-border-color: rgba(255,255,255,0.43); -fx-text-fill: white; -fx-font-weight: bold; -fx-prompt-text-fill: rgba(255, 255, 255, 0.5);" />
+
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="55.0" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="TOP" prefHeight="30.0" prefWidth="284.0" text="Inverter" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="115.0" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="TOP" prefHeight="30.0" prefWidth="284.0" text="I/O port" textFill="WHITE" />
+                        <TextField fx:id="port" alignment="CENTER" prefHeight="27.0" prefWidth="347.0" promptText="hidra*" style="-fx-background-color: #02030A; -fx-border-radius: 18; -fx-border-color: rgba(255,255,255,0.43); -fx-text-fill: white; -fx-font-weight: bold; -fx-prompt-text-fill: rgba(255, 255, 255, 0.5);" />
+                     </children>
+                  </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+
+</AnchorPane>

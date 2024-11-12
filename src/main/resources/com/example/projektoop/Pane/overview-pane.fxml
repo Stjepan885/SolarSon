@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="630.0" prefWidth="942.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projektoop.controllers.pane.OverviewPaneControllers">
+
+    <children>
+        <VBox layoutX="758.0" layoutY="32.0" prefHeight="281.0" prefWidth="172.0">
+            <children>
+                <VBox prefHeight="30.0" prefWidth="172.0">
+                    <children>
+                        <HBox maxHeight="30.0" prefHeight="30.0" prefWidth="200.0">
+                            <children>
+                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                    <children>
+                                        <Label text="PV1" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font></Label>
+                                    </children>
+                                </VBox>
+                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                    <children>
+                                        <Label text="PV2" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font></Label>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox maxHeight="20.0" prefHeight="30.0" prefWidth="172.0">
+                    <children>
+                        <HBox maxHeight="50.0" minHeight="45.0" prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <VBox alignment="TOP_CENTER" prefHeight="50.0" prefWidth="100.0">
+                                    <children>
+                                        <Label contentDisplay="TOP" text="Charging" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                 <opaqueInsets>
+                                    <Insets bottom="10.0" />
+                                 </opaqueInsets></Label>
+                                        <Label fx:id="pv1_power_label" alignment="BOTTOM_CENTER" text="900W" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets top="6.0" />
+                                 </VBox.margin></Label>
+                                    </children>
+                           <opaqueInsets>
+                              <Insets bottom="10.0" />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets bottom="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="10.0" />
+                           </HBox.margin>
+                                </VBox>
+                                <VBox alignment="TOP_CENTER" maxHeight="50.0" prefHeight="50.0" prefWidth="100.0">
+                                    <children>
+                                        <Label text="Power" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font></Label>
+                                        <Label fx:id="pv2_power_label" text="1000W" textFill="#2a73ff">
+                                 <VBox.margin>
+                                    <Insets top="6.0" />
+                                 </VBox.margin></Label>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox prefHeight="49.0" prefWidth="172.0">
+                    <children>
+                        <HBox maxHeight="50.0" minHeight="45.0" prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <VBox alignment="TOP_CENTER" prefHeight="50.0" prefWidth="100.0">
+                                    <children>
+                                        <Label contentDisplay="TOP" text="Input " textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                            <opaqueInsets>
+                                                <Insets bottom="10.0" />
+                                            </opaqueInsets></Label>
+                                        <Label fx:id="pv1_voltage_label" alignment="BOTTOM_CENTER" text="230 V" textFill="WHITE">
+                                            <VBox.margin>
+                                                <Insets top="6.0" />
+                                            </VBox.margin></Label>
+                                    </children>
+                                    <opaqueInsets>
+                                        <Insets bottom="10.0" />
+                                    </opaqueInsets>
+                                    <padding>
+                                        <Insets bottom="10.0" />
+                                    </padding>
+                                    <HBox.margin>
+                                        <Insets bottom="10.0" />
+                                    </HBox.margin>
+                                </VBox>
+                                <VBox alignment="TOP_CENTER" maxHeight="50.0" prefHeight="50.0" prefWidth="100.0">
+                                    <children>
+                                        <Label text="Voltge" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font></Label>
+                                        <Label fx:id="pv2_voltage_label" text="250 V" textFill="#2a73ff">
+                                            <VBox.margin>
+                                                <Insets top="6.0" />
+                                            </VBox.margin></Label>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox minHeight="30.0" prefHeight="30.0" prefWidth="172.0">
+                    <children>
+                        <HBox maxHeight="30.0" prefHeight="30.0" prefWidth="200.0">
+                            <children>
+                                <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="60.0">
+                                    <children>
+                                        <Label text="AC" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font></Label>
+                                    </children>
+                                </VBox>
+                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                    <children>
+                                        <Label text="Output" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font></Label>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox minHeight="30.0" prefHeight="40.0" prefWidth="172.0">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                    <children>
+                                        <Label text="Voltage" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font></Label>
+                                        <Label fx:id="ac_voltage_label" text="230 V" textFill="WHITE" />
+                                    </children>
+                                </VBox>
+                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                    <children>
+                                        <Label text="Frequency" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font></Label>
+                                        <Label fx:id="ac_frequency_label" text="50 Hz" textFill="#2a73ff" />
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox prefHeight="40.0" prefWidth="172.0">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                    <children>
+                                        <Label text="Active" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font></Label>
+                                        <Label fx:id="active_power_label" text="900 W" textFill="WHITE" />
+                                    </children>
+                                </VBox>
+                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                    <children>
+                                        <Label text="Apparent" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font></Label>
+                                        <Label fx:id="apparent_power_label" text="1000 VA" textFill="#2a73ff" />
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            <VBox layoutX="10.0" layoutY="204.0" prefHeight="40.0" prefWidth="172.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                      <children>
+                          <HBox prefHeight="100.0" prefWidth="200.0">
+                              <children>
+                                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                      <children>
+                                          <Label text="Output" textFill="WHITE">
+                                              <font>
+                                                  <Font name="System Bold" size="14.0" />
+                                              </font></Label>
+                                          <Label text="Percent: " textFill="WHITE" />
+                                      </children>
+                                  </VBox>
+                                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                      <children>
+                                          <Label text="Load" textFill="WHITE">
+                                              <font>
+                                                  <Font name="System Bold" size="14.0" />
+                                              </font></Label>
+                                          <Label fx:id="load_label" text="5 %" textFill="#2a73ff" />
+                                      </children>
+                                  </VBox>
+                              </children>
+                          </HBox>
+                      </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </VBox>
+
+            </children>
+        </VBox>
+        <HBox alignment="CENTER_LEFT" layoutX="45.0" layoutY="35.0" prefHeight="72.0" prefWidth="700.0" spacing="10.0">
+            <children>
+                <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fx:id="solar_panel_png" fitHeight="120.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@../Images/panel.png" />
+                        </ImageView>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <Label fx:id="power_in" text="0" textFill="#25ee44">
+                            <font>
+                                <Font name="System Bold" size="26.0" />
+                            </font>
+                        </Label>
+                        <Label text="Input Power" textFill="#e7e5e5" />
+                    </children>
+                </VBox>
+                <VBox alignment="BOTTOM_CENTER" prefHeight="120.0" prefWidth="143.0">
+                    <children>
+                        <Label fx:id="inverter_temperature" text="50 °C" textFill="#f85e5e">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font></Label>
+                    </children>
+                    <padding>
+                        <Insets bottom="30.0" />
+                    </padding>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <Label fx:id="power_out" text="0" textFill="#fa5f7e">
+                            <font>
+                                <Font name="System Bold" size="26.0" />
+                            </font>
+                        </Label>
+                        <Label text="Output Power" textFill="#e7e5e5" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fx:id="house_png" fitHeight="120.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@../Images/e-house.png" />
+                        </ImageView>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="37.0" layoutY="206.0" prefHeight="72.0" prefWidth="700.0" spacing="10.0">
+            <children>
+                <VBox alignment="CENTER_RIGHT" prefHeight="120.0" prefWidth="189.0">
+                    <children>
+                        <ImageView fx:id="grid_png" fitHeight="120.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@../Images/electric-fact.png" />
+                        </ImageView>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="120.0" prefWidth="191.0">
+                    <children>
+                        <Label fx:id="grid_power" text="0" textFill="#26bfbc">
+                            <font>
+                                <Font name="System Bold" size="26.0" />
+                            </font>
+                        </Label>
+                        <Label text="Grid Power" textFill="#e7e5e5" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="120.0" prefWidth="89.0">
+                    <children>
+
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="144.0">
+                    <children>
+                        <Label fx:id="power_Battery" text="0" textFill="#fa5f7e">
+                            <font>
+                                <Font name="System Bold" size="26.0" />
+                            </font>
+                        </Label>
+                        <Label text="Battery Current" textFill="#e7e5e5" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="120.0" prefWidth="177.0">
+                    <children>
+                        <ImageView fx:id="battery_png" fitHeight="120.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <Image fx:id="bla" url="@../Images/battery.png" />
+                        </ImageView>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <ImageView fitHeight="100.0" fitWidth="150.0" layoutX="337.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../Images/inverter.png" />
+        </ImageView>
+        <Line fx:id="line_solar" endX="45.0" endY="-178.0" layoutX="302.0" layoutY="331.0" startX="-136.0" startY="-178.0" stroke="WHITE" strokeWidth="3.0" />
+        <Line fx:id="line_house" endX="45.0" endY="-178.0" layoutX="562.0" layoutY="328.0" startX="-136.0" startY="-178.0" stroke="WHITE" strokeWidth="3.0" />
+        <Line fx:id="line_battery" endX="45.0" endY="-178.0" layoutX="562.0" layoutY="413.0" startX="-136.0" startY="-178.0" stroke="WHITE" strokeWidth="3.0" />
+        <Line fx:id="line_grid" endX="45.0" endY="-178.0" layoutX="302.0" layoutY="410.0" startX="-110.0" startY="-178.0" stroke="WHITE" strokeWidth="3.0" />
+        <Pane fx:id="chartPane" layoutX="45.0" layoutY="330.0" prefHeight="300.0" prefWidth="700.0" />
+        <Label fx:id="battery_capa" layoutX="635.0" layoutY="253.0" styleClass="labelWithColor" stylesheets="@stylePane.css" text="Label" textFill="WHITE">
+            <opaqueInsets>
+                <Insets right="10.0" top="100.0" />
+            </opaqueInsets>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </Label>
+        <Label fx:id="battery_power" contentDisplay="CENTER" layoutX="472.0" layoutY="165.0" text="1000 W" textFill="#2a73ff">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+      <Label contentDisplay="CENTER" layoutX="480.0" layoutY="198.0" text="BatteryPower" textFill="#e7e5e5" />
+      <Line endX="908.0" endY="326.0" startX="45.0" startY="326.0" stroke="WHITE" />
+      <Line endX="240.0" endY="600.0" layoutX="510.0" startX="240.0" startY="30.0" stroke="WHITE" />
+      <Line endX="200.0" endY="-26.0" layoutX="737.0" layoutY="180.0" startX="13.5" startY="-26.0" stroke="WHITE" />
+      <Line endX="200.0" endY="-26.0" layoutX="737.0" layoutY="292.0" startX="13.5" startY="-26.0" stroke="WHITE" />
+      <ScrollPane hbarPolicy="NEVER" layoutX="756.0" layoutY="387.0" prefHeight="234.0" prefWidth="172.0" stylesheets="@stylePane.css" vbarPolicy="NEVER">
+        <content>
+          <VBox fx:id="pnDevices" minHeight="0.0" minWidth="0.0" prefHeight="271.0" prefWidth="174.0" style="-fx-background-color: #02030A">
+
+          </VBox>
+        </content>
+      </ScrollPane>
+      <Label alignment="CENTER" layoutX="770.0" layoutY="350.0" prefHeight="35.0" prefWidth="144.0" text="Devices" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+        <Label alignment="CENTER" layoutX="770.0" layoutY="330.0" prefHeight="35.0" prefWidth="144.0" text="Active" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+
+    </children>
+
+</AnchorPane>

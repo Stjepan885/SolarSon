@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox fx:id="itemC" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="326.0" style="-fx-background-color: #02030A; -fx-background-radius: 5; -fx-background-insets: 0;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label fx:id="deviceLabel" maxWidth="272.0" minWidth="81.0" prefHeight="35.0" prefWidth="250.0" text="Device" textFill="#b7c3d7">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+         <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="90.0" text="0 W">
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+
+    </children>
+    <effect>
+        <DropShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+    </effect>
+   <padding>
+      <Insets bottom="9.0" left="12.0" right="12.0" top="9.0" />
+   </padding>
+</HBox>

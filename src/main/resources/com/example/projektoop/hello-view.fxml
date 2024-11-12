@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="1200.0" style="-fx-background-color: #02030A" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projektoop.controllers.HelloController">
+    <children>
+        <VBox alignment="TOP_CENTER" prefHeight="576.0" prefWidth="256.0" style="-fx-background-color: #05071F;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <ImageView fitHeight="73" fitWidth="67" pickOnBounds="true" preserveRatio="true" smooth="false">
+                <image>
+                    <Image url="@../projektoop/Images/pngegg.png" />
+                </image>
+                <VBox.margin>
+                    <Insets bottom="10.0" top="50.0" />
+                </VBox.margin>
+                <effect>
+                    <Lighting>
+                        <bumpInput>
+                            <Shadow />
+                        </bumpInput>
+                        <light>
+                            <Light.Distant />
+                        </light>
+                    </Lighting>
+                </effect>
+            </ImageView>
+            <Label text="SolarSon" textFill="#e7e5e5">
+                <VBox.margin>
+                    <Insets bottom="20.0" />
+                </VBox.margin>
+            </Label>
+            <Button fx:id="btnOverview" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Overview" textFill="#e7e5e5">
+                <graphic>
+                    <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../projektoop/Images/icons8_Home_32px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+                <opaqueInsets>
+                    <Insets />
+                </opaqueInsets>
+                <VBox.margin>
+                    <Insets />
+                </VBox.margin>
+                <padding>
+                    <Insets left="50.0" />
+                </padding>
+            </Button>
+            <Button fx:id="btnMenus" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Devices">
+                <graphic>
+                    <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../projektoop/Images/icons8_Xbox_Menu_32px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+                <padding>
+                    <Insets left="50.0" />
+                </padding>
+            </Button>
+            <Button fx:id="btnSettings" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Settings">
+                <graphic>
+                    <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../projektoop/Images/icons8_Slider__32px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+                <padding>
+                    <Insets left="50.0" />
+                </padding>
+            </Button>
+            <Button fx:id="btnSignout" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Sign Out">
+                <graphic>
+                    <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../projektoop/Images/icons8_Sign_Out_32px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+                <padding>
+                    <Insets left="50.0" />
+                </padding>
+            </Button>
+        </VBox>
+      <Pane layoutY="486.0" prefHeight="144.0" prefWidth="256.0">
+         <children>
+            <GridPane prefHeight="144.0" prefWidth="256.0" visible="false">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="temperature" text="Label" textFill="WHITE" GridPane.columnIndex="1" />
+                  <Label text="Temperature" textFill="#fffbfb" />
+                  <Label text="Cloud cover" textFill="WHITE" GridPane.rowIndex="1" />
+                  <Label text="Label" textFill="WHITE" GridPane.rowIndex="2" />
+                  <Label text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="cloud_cover" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+        <StackPane layoutX="258.0" prefHeight="630.0" prefWidth="942.0" style="-fx-background-color: #02030A;">
+            <children>
+                <Pane fx:id="pnlOverview" prefHeight="554.0" prefWidth="793.0" />
+                <Pane fx:id="pnlSettings" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="793.0" visible="false">
+                    <fx:include source="settings-pane.fxml" />
+                </Pane>
+                <Pane fx:id="pnlMenus" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="793.0" visible="false">
+                    <fx:include source="device-pane.fxml" />
+                </Pane>
+            </children>
+        </StackPane>
+    </children>
+
+</AnchorPane>
